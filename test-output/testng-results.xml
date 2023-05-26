@@ -1,20 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T13:28:58 IST" name="Default suite" finished-at="2023-05-25T13:29:40 IST" duration-ms="42750">
+  <suite started-at="2023-05-26T15:03:09 IST" name="Default suite" finished-at="2023-05-26T15:06:37 IST" duration-ms="208278">
     <groups>
     </groups>
-    <test started-at="2023-05-25T13:28:58 IST" name="Default test" finished-at="2023-05-25T13:29:40 IST" duration-ms="42750">
+    <test started-at="2023-05-26T15:03:09 IST" name="Default test" finished-at="2023-05-26T15:06:37 IST" duration-ms="208278">
       <class name="AppiumProject.TestCases">
-        <test-method is-config="true" signature="setup()[pri:0, instance:AppiumProject.TestCases@5fe94a96]" started-at="2023-05-25T13:28:58 IST" name="setup" finished-at="2023-05-25T13:29:27 IST" duration-ms="28957" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:03:09 IST" name="setup" finished-at="2023-05-26T15:03:37 IST" duration-ms="28118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="tc7()[pri:6, instance:AppiumProject.TestCases@5fe94a96]" started-at="2023-05-25T13:29:27 IST" name="tc7" finished-at="2023-05-25T13:29:40 IST" duration-ms="13729" status="PASS">
+        <test-method signature="tc1()[pri:0, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:03:37 IST" name="tc1" finished-at="2023-05-26T15:04:06 IST" duration-ms="28995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method signature="tc2()[pri:1, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:04:06 IST" name="tc2" finished-at="2023-05-26T15:04:24 IST" duration-ms="17670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method signature="tc3()[pri:2, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:04:24 IST" name="tc3" finished-at="2023-05-26T15:04:37 IST" duration-ms="12958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method signature="tc4()[pri:3, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:04:37 IST" name="tc4" finished-at="2023-05-26T15:04:48 IST" duration-ms="11090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method signature="tc6()[pri:5, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:04:48 IST" name="tc6" finished-at="2023-05-26T15:05:01 IST" duration-ms="13458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc6 -->
+        <test-method signature="tc7()[pri:6, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:05:01 IST" name="tc7" finished-at="2023-05-26T15:05:13 IST" duration-ms="11736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc7 -->
+        <test-method signature="tc8()[pri:7, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:05:13 IST" name="tc8" finished-at="2023-05-26T15:05:26 IST" duration-ms="13113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc8 -->
+        <test-method signature="tc9()[pri:8, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:05:26 IST" name="tc9" finished-at="2023-05-26T15:05:52 IST" duration-ms="25807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc9 -->
+        <test-method signature="tc10()[pri:9, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:05:52 IST" name="tc10" finished-at="2023-05-26T15:06:01 IST" duration-ms="9296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc10 -->
+        <test-method signature="tc11()[pri:10, instance:AppiumProject.TestCases@411f53a0]" started-at="2023-05-26T15:06:01 IST" name="tc11" finished-at="2023-05-26T15:06:37 IST" duration-ms="35979" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ASUSTUF', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.forbinary.banjararide.a..., appPackage: com.forbinary.banjararide, autoGrantPermissions: true, chromedriverExecutable: C:UserskrishDesktopNew fold..., databaseEnabled: false, desired: {appActivity: com.forbinary.banjararide.a..., appPackage: com.forbinary.banjararide, autoGrantPermissions: true, chromedriverExecutable: C:UserskrishDesktopNew fold..., deviceName: Manisha, noReset: true, platformName: android}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e9b61b73-6cec-49f3-a16b-42d29639f9da
+*** Element info: {Using=id, value=com.forbinary.banjararide:id/menu_info}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ASUSTUF', ip: '192.168.1.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.forbinary.banjararide.a..., appPackage: com.forbinary.banjararide, autoGrantPermissions: true, chromedriverExecutable: C:UserskrishDesktopNew fold..., databaseEnabled: false, desired: {appActivity: com.forbinary.banjararide.a..., appPackage: com.forbinary.banjararide, autoGrantPermissions: true, chromedriverExecutable: C:UserskrishDesktopNew fold..., deviceName: Manisha, noReset: true, platformName: android}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: e9b61b73-6cec-49f3-a16b-42d29639f9da
+*** Element info: {Using=id, value=com.forbinary.banjararide:id/menu_info}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at AppiumProject.TestCases.tc11(TestCases.java:367)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc11 -->
       </class> <!-- AppiumProject.TestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

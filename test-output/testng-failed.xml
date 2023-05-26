@@ -6,7 +6,7 @@
       <class name="AppiumProject.TestCases">
         <methods>
           <include name="setup"/>
-          <include name="tc8"/>
+          <include name="tc11"/>
         </methods>
       </class> <!-- AppiumProject.TestCases -->
     </classes>

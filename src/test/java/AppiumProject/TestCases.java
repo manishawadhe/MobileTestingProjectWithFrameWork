@@ -33,7 +33,7 @@ public class TestCases extends Capabilites {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
-	@Test(enabled = false, priority = 0)
+	@Test(enabled = true, priority = 0)
 	public void tc1() throws InterruptedException{
 		TouchAction taction = new TouchAction(driver);
 	      
@@ -72,7 +72,7 @@ public class TestCases extends Capabilites {
 	
 			
 //			Click On menu bar
-	@Test(enabled = false, priority = 1)
+	@Test(enabled = true, priority = 1)
 	public void tc2() throws InterruptedException {
 		TouchAction taction = new TouchAction(driver);
 			
@@ -99,7 +99,7 @@ public class TestCases extends Capabilites {
 			 Thread.sleep(3000);
 	}
 			 
-	@Test(enabled = false, priority = 2)
+	@Test(enabled = true, priority = 2)
 	public void tc3() throws InterruptedException {
 		TouchAction taction = new TouchAction(driver);
 		
@@ -130,7 +130,7 @@ public class TestCases extends Capabilites {
 	
 //	choose the language
 	
-	@Test(enabled = false, priority = 3)
+	@Test(enabled = true, priority = 3)
 	public void tc4() {
 		TouchAction taction = new TouchAction(driver);
 		
@@ -159,37 +159,39 @@ public class TestCases extends Capabilites {
 	
 //	See the pdf file
 	
-	@Test(enabled = false, priority = 4)
-	public void tc5() throws InterruptedException {
-		TouchAction taction = new TouchAction(driver);
-		
-		AndroidElement menu =	driver.findElementByAccessibilityId("Open");
-		taction.tap(TapOptions.tapOptions().withElement(element(menu))).perform();
-		
-		AndroidElement ic =	driver.findElement(By.xpath("//*[@text='Information Center']"));
-	    taction.tap(TapOptions.tapOptions().withElement(element(ic))).perform();
-	    
-	    AndroidElement terms =	driver.findElement(By.xpath("//*[@text='Terms & Conditions']"));
-	    taction.tap(TapOptions.tapOptions().withElement(element(terms))).perform();
-	    
-	    AndroidElement sub =	driver.findElement(By.xpath("//*[@text='Terms & Condition']"));
-	    taction.tap(TapOptions.tapOptions().withElement(element(sub))).perform();
-	    
-	    AndroidElement pdf=driver.findElement(By.id("com.forbinary.banjararide:id/llFileLinearLayout"));
-		taction.tap(TapOptions.tapOptions().withElement(element(pdf))).perform();
-		
-		driver.findElement(By.xpath("//*[@text='OK']")).click();
-		Thread.sleep(1000);
-	    driver.pressKey(new KeyEvent(AndroidKey.BACK));
-	    Thread.sleep(1000);
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));
-		Thread.sleep(1000);
-		driver.pressKey(new KeyEvent(AndroidKey.BACK));
-		
-		
-	}
+//	@Test(enabled = true, priority = 4)
+//	public void tc5() throws InterruptedException {
+//		TouchAction taction = new TouchAction(driver);
+//		
+//		AndroidElement menu =	driver.findElementByAccessibilityId("Open");
+//		taction.tap(TapOptions.tapOptions().withElement(element(menu))).perform();
+//		
+//		AndroidElement ic =	driver.findElement(By.xpath("//*[@text='Information Center']"));
+//	    taction.tap(TapOptions.tapOptions().withElement(element(ic))).perform();
+//	    
+//	    AndroidElement terms =	driver.findElement(By.xpath("//*[@text='Terms & Conditions']"));
+//	    taction.tap(TapOptions.tapOptions().withElement(element(terms))).perform();
+//	    
+//	    AndroidElement sub =	driver.findElement(By.xpath("//*[@text='Terms & Condition']"));
+//	    taction.tap(TapOptions.tapOptions().withElement(element(sub))).perform();
+//	    
+//	    AndroidElement pdf=driver.findElement(By.id("com.forbinary.banjararide:id/llFileLinearLayout"));
+//		taction.tap(TapOptions.tapOptions().withElement(element(pdf))).perform();
+//		
+//		driver.findElement(By.xpath("//*[@text='OK']")).click();
+//		
+//	    driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//	    driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//		
+//		
+//	}
 	
-	@Test(enabled = false, priority = 5)
+	@Test(enabled = true, priority = 5)
 	public void tc6() throws InterruptedException {
 		TouchAction taction = new TouchAction(driver);
 
@@ -234,10 +236,16 @@ public class TestCases extends Capabilites {
 	    
 	    String text = driver.findElementById("com.forbinary.banjararide:id/infocenterlib_page_title").getText();
 	    Assert.assertEquals(text, "About Company!");
-	    
+	    Thread.sleep(1000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
 	
-	@Test(enabled = false, priority = 7)
+	@Test(enabled = true, priority = 7)
 	
 	public void tc8() throws InterruptedException {
 		TouchAction taction = new TouchAction(driver);
@@ -260,34 +268,151 @@ public class TestCases extends Capabilites {
 	    
 	    Assert.assertTrue(text.contains("9144748983"));
 	    Assert.assertTrue(text.contains("info@banjararide.com"));
-	    
+	    Thread.sleep(1000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	    
 	}
 	
-//	@Test(enabled = true, priority = 8)
+	@Test(enabled = true, priority = 8)
+	
+	public void tc9() throws InterruptedException {
+		TouchAction taction = new TouchAction(driver);
+		
+		AndroidElement days=  driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Queries $ Complaints\"))"));
+	    taction.tap(TapOptions.tapOptions().withElement(element(days))).perform();
+	    
+	    driver.findElementById("com.forbinary.banjararide:id/btnSend").click();
+	    driver.findElementById("com.forbinary.banjararide:id/btnTakePhoto").click();
+	    
+	    AndroidElement add = driver.findElement(By.xpath("//*[@text='Take photo']"));
+	    taction.tap(TapOptions.tapOptions().withElement(element(add))).perform();
+	    
+	    AndroidElement shutter = driver.findElementByAccessibilityId("Shutter");
+	    taction.tap(TapOptions.tapOptions().withElement(element(shutter))).perform();
+	    
+	    AndroidElement done = driver.findElementByAccessibilityId("Done");
+	    taction.tap(TapOptions.tapOptions().withElement(element(done))).perform();
+	   
+	    driver.findElementById("com.forbinary.banjararide:id/edtReportTitle").sendKeys("Activa");
+	    driver.findElementById("com.forbinary.banjararide:id/edtReportDescription").sendKeys("Activa is Good bike");
+	    
+	    AndroidElement select =  driver.findElementById("com.forbinary.banjararide:id/baselib_category_text");
+	    taction.tap(TapOptions.tapOptions().withElement(element(select))).perform();
+	    
+	    AndroidElement query =  driver.findElementByXPath("//*[@text='QUERY']");
+	    taction.tap(TapOptions.tapOptions().withElement(element(query))).perform();
+	    
+	    AndroidElement submit =  driver.findElementByXPath("//*[@text='SUBMIT']");
+	    taction.tap(TapOptions.tapOptions().withElement(element(submit))).perform();
+	  
+	    Thread.sleep(2000);
+	    
+	    String abc = driver.findElementById("com.forbinary.banjararide:id/txtResponseMessage").getText();
+	    Assert.assertEquals(abc, "Thank you for your response");
+	    
+	    Thread.sleep(1000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		
+	    driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		
+	}
+	
+	
+	@Test(enabled = true, priority=9)
+	public void tc10() throws InterruptedException {
+		TouchAction touchA= new TouchAction(driver);
+		
+		AndroidElement menu = driver.findElementByAccessibilityId("Open");
+		touchA.tap(TapOptions.tapOptions().withElement(element(menu))).perform();
+		
+		AndroidElement complaint = driver.findElementByXPath("//*[@text='Complaints And Queries']");
+		touchA.tap(TapOptions.tapOptions().withElement(element(complaint))).perform();
+		
+		AndroidElement findActiva = driver.findElementByXPath("//*[@text='Activa']");
+		touchA.tap(TapOptions.tapOptions().withElement(element(findActiva))).perform();
+		
+		// Asserting
+		String title = driver.findElementByXPath("//*[@text='Activa']").getText();
+		String description = driver.findElementByXPath("//*[@text='Activa is Good bike']").getText();
+		
+		Assert.assertEquals(title, "Activa");
+		Assert.assertEquals(description, "Activa is Good bike");
+		
+		
+		Thread.sleep(1000);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+	
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
+	
+	}
+	
+	@Test(enabled = true, priority = 10)
+	public void tc11() throws InterruptedException {
+		TouchAction taction = new TouchAction(driver);
+		
+		 AndroidElement Menu =	driver.findElementByAccessibilityId("Open");
+		 taction.tap(TapOptions.tapOptions().withElement(element(Menu))).perform();
+		
+		 AndroidElement Booking =	driver.findElement(By.xpath("//*[@text='Bookings']"));
+	     taction.tap(TapOptions.tapOptions().withElement(element(Booking))).perform();
+	     Thread.sleep(1000);
+	     
+	     AndroidElement urbooking =	driver.findElementById("com.forbinary.banjararide:id/menu_info");
+	     taction.tap(TapOptions.tapOptions().withElement(element(urbooking))).perform();
+	     
+	     AndroidElement upcoming =	driver.findElementByXPath("//*[@text='Bullet X 350']");
+	     taction.tap(TapOptions.tapOptions().withElement(element(upcoming))).perform();
+	     
+	     String bullet = driver.findElementByXPath("//*[@text='Bullet X 350']").getText();
+	     Assert.assertEquals(bullet, "Bullet X 350");
+	     
+	     String banjara = driver.findElementByXPath("//*[@text='BANJARARIDE']").getText();
+	     Assert.assertEquals(banjara, "BANJARARIDE");
+	     Thread.sleep(1000);
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+	}
+	
 //	
-//	public void tc9() throws InterruptedException {
+//	@Test(enabled = true, priority = 11)
+//	public void tc12() throws InterruptedException {
 //		TouchAction taction = new TouchAction(driver);
 //		
-//		AndroidElement days=  driver.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Queries $ Complaints\"))"));
-//	    taction.tap(TapOptions.tapOptions().withElement(element(days))).perform();
-//	    
-//	    driver.findElementById("com.forbinary.banjararide:id/btnSend").click();
-//	    driver.findElementById("com.forbinary.banjararide:id/btnTakePhoto").click();
-//	    
-//	    AndroidElement add = driver.findElement(By.xpath("//*[@text='Take photo']"));
-//	    taction.tap(TapOptions.tapOptions().withElement(element(add))).perform();
-//	    
-//	   
-//	       
+//		 AndroidElement Menu =	driver.findElementByAccessibilityId("Open");
+//		 taction.tap(TapOptions.tapOptions().withElement(element(Menu))).perform();
+//		
+//		 AndroidElement Booking =	driver.findElement(By.xpath("//*[@text='Bookings']"));
+//	     taction.tap(TapOptions.tapOptions().withElement(element(Booking))).perform();
+//	     
+//	     AndroidElement urbooking =	driver.findElementById("com.forbinary.banjararide:id/menu_info");
+//	     taction.tap(TapOptions.tapOptions().withElement(element(urbooking))).perform();
+//	     
+//	     AndroidElement upcoming =	driver.findElementByXPath("//*[@text='Bullet X 350']");
+//	     taction.tap(TapOptions.tapOptions().withElement(element(upcoming))).perform();
+//	     
+//	     AndroidElement cancel =	driver.findElementById("com.forbinary.banjararide:id/llCancel");
+//	     taction.tap(TapOptions.tapOptions().withElement(element(cancel))).perform();
+//	     
+//	     AndroidElement send =	driver.findElementByXPath("//*[@text='SEND']");
+//	     taction.tap(TapOptions.tapOptions().withElement(element(send))).perform();
+//	     
+//	     Thread.sleep(1000);
+//			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//			driver.pressKey(new KeyEvent(AndroidKey.BACK));
+//			
 //		
 //	}
-	
-	
-	
-	
-	
-	
+//	
 	
 	
 	

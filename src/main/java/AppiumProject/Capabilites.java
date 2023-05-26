@@ -66,6 +66,11 @@ public class Capabilites {
 			 appActivity = ps.getProperty("appActivity");
 			 chromeDriver = ps.getProperty("chromedriverpath");
 			 DesiredCapabilities dc = new DesiredCapabilities();
+			 
+//			 Handlling permission pop up
+			 
+			 dc.setCapability("autoGrantPermissions", "true");
+			 
 			 dc.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 			 dc.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 			 dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, appPackage);
